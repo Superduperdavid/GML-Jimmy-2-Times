@@ -23,7 +23,7 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/B5BSVqH.png");
+    postMessage("http://i1.kym-cdn.com/photos/images/facebook/000/918/952/d5a.png");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
