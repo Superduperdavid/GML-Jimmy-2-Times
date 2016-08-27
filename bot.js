@@ -33,7 +33,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
+    postMessage("https://docs.google.com/document/d/1ryMWVFRb7O7ozjpDokBm7R9wsAb6D01UVmM4qph29Rc");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
