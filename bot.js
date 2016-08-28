@@ -14,7 +14,7 @@ function respond() {
       botRegexTB = /^\/tb/;botRegexTEN = /^\/ten/;botRegexWAS = /^\/was/
       botGMLBOT = /^\/gmlbot/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/whosnext/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
       botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
-      botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
+      botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexDIS = /^\/disconnect/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
       botRegexdying = /^\/dying/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
@@ -239,6 +239,11 @@ function respond() {
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://daddyleagues.com/gml/rules");
+    this.res.end();
+  }
+  else if(request.text && botRegexDIS.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://docs.google.com/document/d/1_g6eZbrpy3EX59ULvhayeISV9xfk00Rgb5mJm3lF_sU/pub");
     this.res.end();
   }
   else if(request.text && botRegexSalt.test(request.text)) {
