@@ -183,6 +183,83 @@ function respond() {
     postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
     this.res.end();
   }
+  else if(request.text && botGMLBOT.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://docs.google.com/document/d/1ryMWVFRb7O7ozjpDokBm7R9wsAb6D01UVmM4qph29Rc/pub");
+    this.res.end();
+  }
+  else if(request.text && botRegexPDL.test(request.text)) {
+    this.res.writeHead(200);
+    var req = request.text.substring(5,request.text.length);
+    var rep = req.replace(/ /,"+");
+    postMessage("http://daddyleagues.com/GML/players?name="+rep+"&position=all&team=all");
+    this.res.end();
+  }
+  else if(request.text && botRegexNXT.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/GML/team/"+request.text.substring(6,9)+"/schedule");
+    this.res.end();
+  }
+  else if(request.text && botRegexSCH.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/GML/schedules");
+    this.res.end();
+  }
+  else if(request.text && botRegexRO.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/gml/team/"+request.text.substring(8,11)+"/roster");
+    this.res.end();
+  }
+  else if(request.text && botRegexDstand.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://daddyleagues.com/gml/standings");
+    this.res.end();
+  }
+  else if(request.text && botRegexCstand.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://daddyleagues.com/gml/standings/conference");
+    this.res.end();
+  }
+  else if(request.text && botRegexPow.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://daddyleagues.com/gml/standing/ranking");
+    this.res.end();
+  }
+  else if(request.text && botRegexPow.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://daddyleagues.com/gml/standing/ranking");
+    this.res.end();
+  }
+  else if(request.text && botRegexHurt.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.daddyleagues.com/gml/players?name=&position=all&team="+request.text.substring(6,9)+"&injured=1");
+    this.res.end();
+  }
+  else if(request.text && botRegexSh.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://docs.google.com/document/d/16cJD6ers2J59C9t3_fTZdvtz--membWK1-DrwN6KIWM/pub");
+    this.res.end();
+  }
+  else if(request.text && botRegexRules.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://daddyleagues.com/gml/rules");
+    this.res.end();
+  }
+  else if(request.text && botRegexSalt.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i1.kym-cdn.com/photos/images/facebook/000/918/952/d5a.png");
+    this.res.end();
+  } 
+  else if(request.text && botRegexAd.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
+    this.res.end();
+  }
+  else if(request.text && botRegexdying.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgflip.com/xgtsl.jpg");
+    this.res.end();
+  }
   else {
     console.log("don't care");
     this.res.writeHead(200);
