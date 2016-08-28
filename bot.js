@@ -11,8 +11,8 @@ function respond() {
       botRegexKC = /^\/kc/;botRegexLA = /^\/la/;botRegexMIA = /^\/mia/;botRegexMIN = /^\/min/;botRegexNE = /^\/ne/;
       botRegexNO = /^\/no/;botRegexNYG = /^\/nyg/;botRegexNYJ = /^\/nyj/;botRegexOAK = /^\/oak/;botRegexPHI = /^\/phi/;
       botRegexPIT = /^\/pit/;botRegexSD = /^\/sd/;botRegexSEA = /^\/sea/;botRegexSF = /^\/sf/;botRegexSTL = /^\/stl/;
-      botRegexTB = /^\/tb/;botRegexTEN = /^\/ten/;botRegexWAS = /^\/was/
-      botGMLBOT = /^\/gmlbot/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/whosnext/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
+      botRegexTB = /^\/tb/;botRegexTEN = /^\/ten/;botRegexWAS = /^\/was/;botRegexGML = /^\/gml/
+      botTRYME = /^\/tryme/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/whosnext/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
       botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
       botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexDIS = /^\/disconnect/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
       botRegexdying = /^\/dying/;
@@ -184,7 +184,12 @@ function respond() {
     postMessage("https://www.youtube.com/user/Rwinne1");
     this.res.end();
   }
-  else if(request.text && botGMLBOT.test(request.text)) {
+  else if(request.text && botRegexGML.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.youtube.com/channel/UClvsLwLu_dckd1CB9fbtT4A");
+    this.res.end();
+  }    
+  else if(request.text && botRegexTRYME.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/document/d/1ryMWVFRb7O7ozjpDokBm7R9wsAb6D01UVmM4qph29Rc/pub");
     this.res.end();
