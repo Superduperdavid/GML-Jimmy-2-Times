@@ -21,7 +21,7 @@ function respond() {
     postMessage("https://daddyleagues.com/gml/standings");
     this.res.end();
   }
-  else if(request.text && botRegexDstand.test(request.text)) {
+  else if(request.text && botRegexPow.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://daddyleagues.com/gml/standing/ranking");
     this.res.end();
