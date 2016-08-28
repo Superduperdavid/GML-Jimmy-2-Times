@@ -189,7 +189,7 @@ function respond() {
     postMessage("https://www.youtube.com/channel/UClvsLwLu_dckd1CB9fbtT4A");
     this.res.end();
   }    
-  else if(request.text && botRegexTRYME.test(request.text)) {
+  else if(request.text && botTRYME.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/document/d/1ryMWVFRb7O7ozjpDokBm7R9wsAb6D01UVmM4qph29Rc/pub");
     this.res.end();
