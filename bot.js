@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/schedule/;  botRegexDL = /^\/roster/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/schedule/;  botRegexDL = /^\/roster/i;botRegexSalt = /^\/salt/;botRegexDstand = /^\/division/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexdying = /^\/dying/; botRegexSC = /^\/next/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botGMLBOT = /^\/gmlbot/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/schedulingrules/; botRegexWk = /^\/users/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -15,7 +15,12 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/GML/schedules");
     this.res.end();
-  } 
+  }
+  else if(request.text && botRegexDstand.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://daddyleagues.com/gml/standings");
+    this.res.end();
+  }
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/gml/team/"+request.text.substring(8,11)+"/roster");
