@@ -5,13 +5,20 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegexARI = /^\/ari/;botRegexATL = /^\/atl/;botRegexBAL = /^\/bal/;botRegexBUF = /^\/buf/;botRegexCAR = /^\/car/;botRegexCHI = /^\/chi/;botRegexCIN = /^\/cin/;botRegexCLE = /^\/cle/;botRegexDAL = /^\/dal/;botRegexDEN = /^\/den/;botRegexDET = /^\/det/;botRegexGB = /^\/gb/;botRegexHOU = /^\/hou/;botRegexIND = /^\/ind/;botRegexJAC = /^\/jac/;botRegexKC = /^\/kc/;botRegexLA = /^\/la/;botRegexMIA = /^\/mia/;botRegexMIN = /^\/min/;botRegexNE = /^\/ne/;botRegexNO = /^\/no/;botRegexNYG = /^\/nyg/;botRegexNYJ = /^\/nyj/;botRegexOAK = /^\/oak/;botRegexPHI = /^\/phi/;botRegexPIT = /^\/pit/;botRegexSD = /^\/sd/;botRegexSEA = /^\/sea/;botRegexSF = /^\/sf/;botRegexSTL = /^\/stl/;botRegexTB = /^\/tb/;botRegexTEN = /^\/ten/;botRegexWAS = /^\/was/
+      botRegexARI = /^\/ari/;botRegexATL = /^\/atl/;botRegexBAL = /^\/bal/;botRegexBUF = /^\/buf/;botRegexCAR = /^\/car/;
+      botRegexCHI = /^\/chi/;botRegexCIN = /^\/cin/;botRegexCLE = /^\/cle/;botRegexDAL = /^\/dal/;botRegexDEN = /^\/den/;
+      botRegexDET = /^\/det/;botRegexGB = /^\/gb/;botRegexHOU = /^\/hou/;botRegexIND = /^\/ind/;botRegexJAC = /^\/jac/;
+      botRegexKC = /^\/kc/;botRegexLA = /^\/la/;botRegexMIA = /^\/mia/;botRegexMIN = /^\/min/;botRegexNE = /^\/ne/;
+      botRegexNO = /^\/no/;botRegexNYG = /^\/nyg/;botRegexNYJ = /^\/nyj/;botRegexOAK = /^\/oak/;botRegexPHI = /^\/phi/;
+      botRegexPIT = /^\/pit/;botRegexSD = /^\/sd/;botRegexSEA = /^\/sea/;botRegexSF = /^\/sf/;botRegexSTL = /^\/stl/;
+      botRegexTB = /^\/tb/;botRegexTEN = /^\/ten/;botRegexWAS = /^\/was/
       
-      botGMLBOT = /^\/gmlbot/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/next/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;
+      botGMLBOT = /^\/gmlbot/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/next/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
+      botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
+      botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;
       
       botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;botRegexdying = /^\/dying/;botRegexSC = /^\/next/i;botRegexYT = /^\/mia/i;
-     
-  var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
+     var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
                
@@ -264,21 +271,13 @@ function respond() {
     postMessage("https://i.imgflip.com/xgtsl.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexTw.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
-    this.res.end();
-  } 
-  else if(request.text && botRegexSb.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddenall32");
-    this.res.end();
-  }
   else {
     console.log("don't care");
     this.res.writeHead(200);
     this.res.end();
   }
+  
+  
 }
 
 function postMessage(response) {
