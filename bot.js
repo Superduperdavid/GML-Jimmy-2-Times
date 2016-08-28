@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/schedule/;botRegexCstand = /^\/conference/;botRegexDL = /^\/roster/i;botRegexSalt = /^\/salt/;botRegexDstand = /^\/division/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexdying = /^\/dying/; botRegexSC = /^\/next/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botGMLBOT = /^\/gmlbot/;botRegexPow = /^\/power/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/schedulingrules/; botRegexHurt = /^\/hurt/i;
+      botRegexP = /^\/PDL/i;botRegexYT = /^\/youtube/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/schedulingrules/; botRegexHurt = /^\/hurt/i;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -67,8 +67,12 @@ function respond() {
     var rep = req.replace(/ /,"+");
     postMessage("http://daddyleagues.com/GML/players?name="+rep+"&position=all&team=all");
     this.res.end();
-  }  
-
+  }
+  else if(request.text && botRegexYT.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A);
+    this.res.end();
+  }
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
