@@ -18,7 +18,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/gml/team/"+request.text.substring(8,9)+"/roster");
+    postMessage("http://daddyleagues.com/gml/team/"+request.text.substring(8,11)+"/roster");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
