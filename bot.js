@@ -56,7 +56,7 @@ function respond() {
   }
   else if(request.text && botRegexCLE.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
+    postMessage("https://m.youtube.com/channel/UC9RnpVjx52zLSrA7_arAwAQ");
     this.res.end();
   }
   else if(request.text && botRegexDAL.test(request.text)) {
