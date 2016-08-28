@@ -14,7 +14,8 @@ function respond() {
       botRegexTB = /^\/tb/;botRegexTEN = /^\/ten/;botRegexWAS = /^\/was/
       botGMLBOT = /^\/gmlbot/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/next/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
       botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
-      botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;
+      botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
+      botRegexdying = /^\/dying/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
