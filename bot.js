@@ -86,7 +86,7 @@ function respond() {
   }
   else if(request.text && botRegexIND.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
+    postMessage("https://www.youtube.com/user/badcapone1");
     this.res.end();
   }
   else if(request.text && botRegexJAC.test(request.text)) {
