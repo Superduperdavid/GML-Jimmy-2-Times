@@ -5,85 +5,22 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      
-      
-      botGMLBOT = /^\/gmlbot/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/next/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
-      botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
-      botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;
-      
-      botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;botRegexdying = /^\/dying/;botRegexSC = /^\/next/i;botRegexYT = /^\/mia/i;
-     var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegexAd=/^\/advance/;botRegexdying = /^\/dying/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/perfecttiming/; botRegexWk = /^\/users/;
+  var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
-                
-  else if(request.text && botGMLBOT.test(request.text)) {
+  if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1ryMWVFRb7O7ozjpDokBm7R9wsAb6D01UVmM4qph29Rc/pub");
+    postMessage(cool());
     this.res.end();
-  }
-  else if(request.text && botRegexPDL.test(request.text)) {
+  } 
+  else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    var req = request.text.substring(5,request.text.length);
-    var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/GML/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/gml/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
-  }
-  else if(request.text && botRegexNXT.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/GML/team/"+request.text.substring(6,9)+"/schedule");
-    this.res.end();
-  }
-  else if(request.text && botRegexSCH.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/GML/schedules");
-    this.res.end();
-  }
-  else if(request.text && botRegexRO.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/gml/team/"+request.text.substring(8,11)+"/roster");
-    this.res.end();
-  }
-  else if(request.text && botRegexDstand.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/standings");
-    this.res.end();
-  }
-  else if(request.text && botRegexCstand.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/standings/conference");
-    this.res.end();
-  }
-  else if(request.text && botRegexPow.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/standing/ranking");
-    this.res.end();
-  }
-   else if(request.text && botRegexARI.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/LunarFuzionGaming");
-    this.res.end();
-  }
-  
-  else if(request.text && botRegexPow.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/standing/ranking");
-    this.res.end();
-  }
-  else if(request.text && botRegexHurt.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/gml/players?name=&position=all&team="+request.text.substring(6,9)+"&injured=1");
-    this.res.end();
-  }
-  else if(request.text && botRegexSh.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/16cJD6ers2J59C9t3_fTZdvtz--membWK1-DrwN6KIWM/pub");
-    this.res.end();
-  }
-  else if(request.text && botRegexRules.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/rules");
-    this.res.end();
-  }
+  } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i1.kym-cdn.com/photos/images/facebook/000/918/952/d5a.png");
@@ -94,24 +31,65 @@ function respond() {
     postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
     this.res.end();
   }
+  else if(request.text && botRegexRules.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://daddyleagues.com/gml/rules");
+    this.res.end();
+  } 
   else if(request.text && botRegexdying.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.imgflip.com/xgtsl.jpg");
     this.res.end();
+  } 
+  else if(request.text && botRegexSC.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/GML/team/"+request.text.substring(5,8)+"/schedule");
+    this.res.end();
   }
-  else if(request.text && botODB.test(request.text)) {		 +  
+  else if(request.text && botRegexP.test(request.text)) {
+    this.res.writeHead(200);
+    var req = request.text.substring(5,request.text.length);
+    var rep = req.replace(/ /,"+");
+    postMessage("http://daddyleagues.com/GML/players?name="+rep+"&position=all&team=all");
+    this.res.end();
+  }  
+
+  else if(request.text && botRegexTw.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
+    this.res.end();
+  } 
+  else if(request.text && botRegexSb.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.reddit.com/r/maddenall32");
+    this.res.end();
+  } 
+  else if(request.text && botRegexSh.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://docs.google.com/document/d/16cJD6ers2J59C9t3_fTZdvtz--membWK1-DrwN6KIWM/pub");
+    this.res.end();
+  } 
+  else if(request.text && botRegexWk.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://docs.google.com/spreadsheets/d/1kJqQWCq3RKiTrd4f71FFNKr-Y0ppJzjk0fSF0rP6Bto/edit?usp=sharing");
+    this.res.end();
+  } 
+  else if(request.text && botODB.test(request.text)) {
     this.res.writeHead(200);
     postMessage("OBJ*");
-    this.res.end();		    
+    this.res.end();
   } 
+  else if(request.text && botDuck.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
+    this.res.end();
+  }
   else {
     console.log("don't care");
     this.res.writeHead(200);
     this.res.end();
   }
-  
-  
-
+}
 
 function postMessage(response) {
   var botResponse,options, body, botReq;
