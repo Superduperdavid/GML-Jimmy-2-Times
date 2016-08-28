@@ -181,8 +181,6 @@ function respond() {
     postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
     this.res.end();
   }
-  
-  
   else if(request.text && botGMLBOT.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/document/d/1ryMWVFRb7O7ozjpDokBm7R9wsAb6D01UVmM4qph29Rc/pub");
@@ -265,8 +263,6 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.imgflip.com/xgtsl.jpg");
     this.res.end();
-  } 
-  
   }
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
@@ -277,12 +273,6 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://www.reddit.com/r/maddenall32");
     this.res.end();
-  } 
-   
-   
-  
-  } 
-  
   }
   else {
     console.log("don't care");
