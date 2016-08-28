@@ -86,7 +86,7 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1kJqQWCq3RKiTrd4f71FFNKr-Y0ppJzjk0fSF0rP6Bto/edit?usp=sharing");
+    postMessage("http://www.daddyleagues.com/gml/players?name=&position=all&team="+request.text.substring(6,9)+&injured=1");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) {
