@@ -86,7 +86,7 @@ function respond() {
   } 
   else if(request.text && botRegexHurt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/gml/players?name=&position=all&team="+request.text.substring(8,13)+"&injured=1");
+    postMessage("http://www.daddyleagues.com/gml/players?name=&position=all&team="+request.text.substring(8,9)+"&injured=1");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) {
