@@ -156,7 +156,7 @@ function respond() {
   }
   else if(request.text && botRegexSEA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
+    postMessage("https://www.youtube.com/channel/UCEA1THRdcZBVQnFBJhz7iEQ");
     this.res.end();
   }
   else if(request.text && botRegexSF.test(request.text)) {
