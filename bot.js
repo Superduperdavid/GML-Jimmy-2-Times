@@ -198,7 +198,7 @@ function respond() {
   }
   else if(request.text && botRegexNXT.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/GML/team/"+request.text.substring(8,12)+"/schedule");
+    postMessage("http://daddyleagues.com/GML/team/"+request.text.substring(10,13)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexSCH.test(request.text)) {
