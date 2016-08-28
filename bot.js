@@ -271,6 +271,11 @@ function respond() {
     postMessage("https://i.imgflip.com/xgtsl.jpg");
     this.res.end();
   }
+  else if(request.text && botODB.test(request.text)) {		 +  
+    this.res.writeHead(200);
+    postMessage("OBJ*");
+    this.res.end();		    
+  } 
   else {
     console.log("don't care");
     this.res.writeHead(200);
@@ -278,7 +283,7 @@ function respond() {
   }
   
   
-}
+
 
 function postMessage(response) {
   var botResponse,options, body, botReq;
