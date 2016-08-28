@@ -198,7 +198,7 @@ function respond() {
   }
   else if(request.text && botRegexNXT.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/GML/team/"+request.text.substring(6,9)+"/schedule");
+    postMessage("http://daddyleagues.com/GML/team/"+request.text.substring(9,12)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexSCH.test(request.text)) {
@@ -219,11 +219,6 @@ function respond() {
   else if(request.text && botRegexCstand.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://daddyleagues.com/gml/standings/conference");
-    this.res.end();
-  }
-  else if(request.text && botRegexPow.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/standing/ranking");
     this.res.end();
   }
   else if(request.text && botRegexPow.test(request.text)) {
