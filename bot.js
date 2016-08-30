@@ -164,11 +164,6 @@ function respond() {
     postMessage("https://www.youtube.com/channel/UCnrMXqYmY1YGnmXpXL8kj-Q");
     this.res.end();
   }
-  else if(request.text && botRegexSTL.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
-    this.res.end();
-  }
   else if(request.text && botRegexTB.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://www.youtube.com/channel/UCCfg0fjb9mZGKQgk4tati8w");
