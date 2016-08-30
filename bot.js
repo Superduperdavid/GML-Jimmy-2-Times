@@ -171,7 +171,7 @@ function respond() {
   }
   else if(request.text && botRegexTEN.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
+    postMessage("https://www.youtube.com/user/sds606");
     this.res.end();
   }
   else if(request.text && botRegexWAS.test(request.text)) {
