@@ -61,7 +61,7 @@ function respond() {
   }
   else if(request.text && botRegexDAL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCl-I_U2XvLJvpHVhv1KKvuw");
+    postMessage("https://www.youtube.com/channel/UCZUOLrKldRUxKdhpy0O6-mw");
     this.res.end();
   }
   else if(request.text && botRegexDEN.test(request.text)) {
