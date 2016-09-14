@@ -15,9 +15,10 @@ function respond() {
       botTRYME = /^\/tryme/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/whosnext/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
       botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
       botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexDIS = /^\/disconnect/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
-      botRegexdying = /^\/dying/;botRegexYoda = /^\/yoda/;botRegexMore = /^\/more/;botRegexDod = /^\/dodging/;botRegexNoplay = /^\/sike/;botRegexSimhurt = /^\/simplyhurt/;
+      botRegexdying = /^\/dying/;botRegexYoda = /^\/yoda/;botRegexMore = /^\/more/;botRegexDod = /^\/dodging/;botRegexNoplay = /^\/sike/;
+      botRegexSimhurt = /^\/simplyhurt/;botRegexPanda = /^\/panda/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
-                ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
+                ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","LA","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegexARI.test(request.text)) {
     this.res.writeHead(200);
@@ -71,7 +72,7 @@ function respond() {
   }
   else if(request.text && botRegexDET.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCesEoyrXzsuP8sq0AeW0OjQ");
+    postMessage("https://www.youtube.com/channel/UClvsLwLu_dckd1CB9fbtT4A");
     this.res.end();
   }
   else if(request.text && botRegexGB.test(request.text)) {
@@ -116,7 +117,7 @@ function respond() {
   }
   else if(request.text && botRegexNE.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCD6sxdvUHpxZGZdCTdWxx4Q");
+    postMessage("https://www.youtube.com/channel/UClvsLwLu_dckd1CB9fbtT4A");
     this.res.end();
   }
   else if(request.text && botRegexNO.test(request.text)) {
@@ -141,7 +142,7 @@ function respond() {
   }
   else if(request.text && botRegexPHI.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UC0WwxggCnFnK11tza5H-8Ag");
+    postMessage("https://www.youtube.com/channel/UCesEoyrXzsuP8sq0AeW0OjQ");
     this.res.end();
   }
   else if(request.text && botRegexPIT.test(request.text)) {
@@ -156,7 +157,7 @@ function respond() {
   }
   else if(request.text && botRegexSEA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCEA1THRdcZBVQnFBJhz7iEQ");
+    postMessage("https://www.youtube.com/channel/UClvsLwLu_dckd1CB9fbtT4A");
     this.res.end();
   }
   else if(request.text && botRegexSF.test(request.text)) {
@@ -285,6 +286,11 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://memedad.com/memes/977993.jpg");
     this.res.end();
+  }
+  else if(request.text && botRegexPanda.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/480x204.gif.461387d8207a487094c05503f5228dd7");
+    this.res.end();  
   }  
   else {
     console.log("don't care");
