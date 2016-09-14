@@ -285,6 +285,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://memedad.com/memes/977993.jpg");
     this.res.end();
+  }  
   else {
     console.log("don't care");
     this.res.writeHead(200);
