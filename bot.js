@@ -15,8 +15,7 @@ function respond() {
       botTRYME = /^\/tryme/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/whosnext/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
       botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
       botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexDIS = /^\/disconnect/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
-      botRegexdying = /^\/dying/;botRegexYoda = /^\/yoda/;botRegexMore = /^\/more/;botRegexDod = /^\/dodging/;botRegexNoplay = /^\/sike/;
-      botRegexSimhurt = /^\/simplyhurt/;
+      botRegexdying = /^\/dying/;botRegexYoda = /^\/yoda/;botRegexMore = /^\/more/;botRegexDod = /^\/dodging/;botRegexNoplay = /^\/sike/;botRegexSimhurt = /^\/simplyhurt/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
