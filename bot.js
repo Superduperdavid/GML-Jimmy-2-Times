@@ -15,7 +15,8 @@ function respond() {
       botTRYME = /^\/tryme/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/whosnext/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
       botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
       botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexDIS = /^\/disconnect/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
-      botRegexdying = /^\/dying/;
+      botRegexdying = /^\/dying/;botRegexYoda = /^\/yoda/;botRegexMore = /^\/more/;botRegexDod = /^\/dodging/;botRegexNoplay = /^\/sike/;
+      botRegexHurt = /^\/hurt/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -261,6 +262,30 @@ function respond() {
     postMessage("https://i.imgflip.com/xgtsl.jpg");
     this.res.end();
   }
+  else if(request.text && botRegexYoda.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://memedad.com/memes/977947.jpg");
+    this.res.end();
+  }
+  else if(request.text && botRegexMore.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://memedad.com/memes/977979.jpg");
+    this.res.end();
+  }
+  else if(request.text && botRegexDod.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://memedad.com/memes/977981.jpg");
+    this.res.end();
+  }
+  else if(request.text && botRegexNoplay.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.imgflip.com/tcsz3.jpg");
+    this.res.end();
+  }
+  else if(request.text && botRegexHurt.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://memedad.com/memes/977993.jpg");
+    this.res.end();
   else {
     console.log("don't care");
     this.res.writeHead(200);
