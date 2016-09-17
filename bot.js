@@ -112,7 +112,7 @@ function respond() {
   }
   else if(request.text && botRegexMIN.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
+    postMessage("https://www.youtube.com/channel/UCH4DdBg3Zgt-b4Se8HynkMg");
     this.res.end();
   }
   else if(request.text && botRegexNE.test(request.text)) {
