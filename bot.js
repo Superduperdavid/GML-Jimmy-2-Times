@@ -97,7 +97,7 @@ function respond() {
   }
   else if(request.text && botRegexKC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/TBEZZY67");
+    postMessage("https://www.youtube.com/channel/UCUQ_G9lIXxMQnP4h55hqjKw");
     this.res.end();
   }
   else if(request.text && botRegexLA.test(request.text)) {
