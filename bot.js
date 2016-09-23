@@ -162,7 +162,7 @@ function respond() {
   }
   else if(request.text && botRegexSF.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCj9IRm5PQVbtKMTmaoGKeSg");
+    postMessage("https://www.youtube.com/user/ctopher2291");
     this.res.end();
   }
   else if(request.text && botRegexTB.test(request.text)) {
