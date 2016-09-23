@@ -10,7 +10,7 @@ function doPost(e){
   var text = post.text;
   var user_id = post.user_id;
   
- else if(text.indexOf("changed name to") > -1 && user_id == 0){
+  if(text.indexOf("changed name to") > -1 && user_id == 0){
      sendText("I liked the old one better");
   }
 }
