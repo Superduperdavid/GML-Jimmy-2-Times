@@ -25,6 +25,10 @@ function doPost(e){
 // Changed NickName
   }else if(text.indexOf("changed name to") > -1 && user_id == 0){
      sendText("I liked the old one better");
+     
+// Removed from Group
+  }else if(text.indexOf("removed") > -1 && user_id == 0){
+     sendText("Lets take a walk... GET IN THE FUCKING CAR...");
   }
 }
 
