@@ -11,7 +11,9 @@ function doPost(e){
   var user_id = post.user_id;
   
   if(text.indexOf("changed name to") > -1 && user_id == 0){
-     sendText("I liked the old one better");
+     postMessage("I liked the old one better... MUCH better...");
+    this.res.end();
+    
   }
 }
 
@@ -30,7 +32,7 @@ function respond() {
       botTRYME = /^\/tryme/;botRegexPDL = /^\/PDL/i;botRegexNXT = /^\/whosnext/i;botRegexSCH = /^\/schedule/;botRegexRO = /^\/roster/i;
       botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
       botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexDIS = /^\/disconnect/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
-      botRegexdying = /^\/dying/;botRegexYoda = /^\/yoda/;botRegexMore = /^\/more/;botRegexDod = /^\/dodging/;botRegexNoplay = /^\sike/;
+      botRegexdying = /^\/dying/;botRegexYoda = /^\/yoda/;botRegexMore = /^\/more/;botRegexDod = /^\/dodging/;botRegexNoplay = /^\/sike/;
       botRegexSimhurt = /^\/simplyhurt/;botRegexPanda = /^\/panda/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","LA","CHI","CAR",
