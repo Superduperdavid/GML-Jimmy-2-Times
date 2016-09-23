@@ -10,7 +10,12 @@ function doPost(e){
   var post = JSON.parse(e.postData.getDataAsString());
   var text = post.text;
   var user_id = post.user_id;
+  
+  if(text.indexOf("changed name to") > -1 && user_id == 0){
+     sendText("I liked the old one better");
+  }
 }
+
 
 
 
