@@ -314,7 +314,7 @@ function respond() {
     postMessage("My NEW name");
     this.res.end();  
    }
-  }  
+   
   else {
     console.log("don't care");
     this.res.writeHead(200);
