@@ -33,7 +33,7 @@ function respond() {
       botRegexDstand = /^\/division/;botRegexCstand = /^\/conference/;botRegexPow = /^\/power/;botRegexHurt = /^\/hurt/i;
       botRegexSh = /^\/schedulingrules/;botRegexRules = /^\/rules/;botRegexDIS = /^\/disconnect/;botRegexSalt = /^\/salt/;botRegexAd=/^\/advance/;
       botRegexdying = /^\/dying/;botRegexYoda = /^\/yoda/;botRegexMore = /^\/more/;botRegexDod = /^\/dodging/;botRegexNoplay = /^\/sike/;
-      botRegexSimhurt = /^\/simplyhurt/;botRegexPanda = /^\/panda/;
+      botRegexSimhurt = /^\/simplyhurt/;botRegexPanda = /^\/panda/;botRegexSYS = /^\/changed name to/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","LA","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -307,7 +307,13 @@ function respond() {
   else if(request.text && botRegexPanda.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/480x204.gif.461387d8207a487094c05503f5228dd7");
+    this.res.end();
+  }
+  else if(request.text && botRegexSYS.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("My NEW name");
     this.res.end();  
+   }
   }  
   else {
     console.log("don't care");
