@@ -6,6 +6,14 @@ function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
 }
 
+function doPost(e){
+  var post = JSON.parse(e.postData.getDataAsString());
+  var text = post.text;
+  var user_id = post.user_id;
+}
+
+
+
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexARI = /^\/ari/;botRegexATL = /^\/atl/;botRegexBAL = /^\/bal/;botRegexBUF = /^\/buf/;botRegexCAR = /^\/car/;
