@@ -2,25 +2,6 @@ var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
 var botID = process.env.BOT_ID;
 
-function sendText(text){
-  UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
-}
-function respond(){
-  var post = JSON.parse(this.req.chunks[0]()),
-  var text = post.text;
-  var user_id = post.user_id;
-  
-  if(text.indexOf("changed name to") > -1 && user_id == 0){
-    this.res.writeHead(200);
-    postMessage("blah right back");
-    this.res.end();
-    
-  }
-}
-
-
-
-
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexARI = /^\/ari/;botRegexATL = /^\/atl/;botRegexBAL = /^\/bal/;botRegexBUF = /^\/buf/;botRegexCAR = /^\/car/;
