@@ -1,8 +1,6 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
 var botID = process.env.BOT_ID;
-function sendText(text){
- 
 function doPost(e){
   var post = JSON.parse(e.postData.getDataAsString());
   var text = post.text;
