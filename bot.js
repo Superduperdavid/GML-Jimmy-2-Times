@@ -289,11 +289,8 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/480x204.gif.461387d8207a487094c05503f5228dd7");
     this.res.end();  
-  } 
-  function sendText(text){
-  UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
-}
-
+  }
+  
 function doPost(e){
   var post = JSON.parse(e.postData.getDataAsString());
   var text = post.text;
