@@ -289,14 +289,8 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/480x204.gif.461387d8207a487094c05503f5228dd7");
     this.res.end();  
-  }  
-  else {
-    console.log("don't care");
-    this.res.writeHead(200);
-    this.res.end();
-  }
-}
-function sendText(text){
+  } 
+  function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
 }
 
@@ -306,7 +300,7 @@ function doPost(e){
   var user_id = post.user_id; // Used to tell if its system sending the message (returns 0)
 
 // Rejoined a group
-  if (text.indexOf("has rejoined the") > -1 && user_id == 0){
+  }if (text.indexOf("has rejoined the") > -1 && user_id == 0){
      sendText("Welcome back");
 
 // Joined a group
@@ -325,7 +319,12 @@ function doPost(e){
   }else if(text.indexOf("removed") > -1 && user_id == 0){
      sendText("Lets take a walk... GET IN THE FUCKING CAR...");
   }
-}
+  else {
+    console.log("don't care");
+    this.res.writeHead(200);
+    this.res.end();
+  }
+
 
 function postMessage(response) {
   var botResponse,options, body, botReq;
