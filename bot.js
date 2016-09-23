@@ -291,31 +291,7 @@ function respond() {
     this.res.end();  
   }
   
-function doPost(e){
-  var post = JSON.parse(e.postData.getDataAsString());
-  var text = post.text;
-  var user_id = post.user_id; // Used to tell if its system sending the message (returns 0)
-
-// Rejoined a group
-  if (text.indexOf("has rejoined the") > -1 && user_id == 0){
-     sendText("Welcome back");
-
-// Joined a group
-  }else if(text.indexOf("has joined the") > -1 && user_id == 0){
-     sendText("Welcome to Hell!");
-
-// Left a group
-  }else if(text.indexOf("has left the") > -1 && user_id == 0){
-     sendText("Cya sucker");
-
-// Changed NickName
-  }else if(text.indexOf("changed name to") > -1 && user_id == 0){
-     sendText("I liked the old one better");
-     
-// Removed from Group
-  }else if(text.indexOf("removed") > -1 && user_id == 0){
-     sendText("Lets take a walk... GET IN THE FUCKING CAR...");
-  }
+  
 }
   else {
   console.log("don't care");
