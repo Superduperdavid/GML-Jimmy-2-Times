@@ -1,8 +1,15 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
 
+function doPost(e){
 var botID = process.env.BOT_ID;
+var user_id = post.user_id;
 
+if (text.indexOf("changed name to") > -1 && user_id == 0){
+     sendText("I liked the old one better");
+  
+}
+}
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexARI = /^\/ari/;botRegexATL = /^\/atl/;botRegexBAL = /^\/bal/;botRegexBUF = /^\/buf/;botRegexCAR = /^\/car/;
