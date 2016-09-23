@@ -1,6 +1,8 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
+
 var botID = process.env.BOT_ID;
+
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexARI = /^\/ari/;botRegexATL = /^\/atl/;botRegexBAL = /^\/bal/;botRegexBUF = /^\/buf/;botRegexCAR = /^\/car/;
@@ -90,7 +92,7 @@ function respond() {
   }
   else if(request.text && botRegexJAC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCb5S4tdaOlcn9ZnjflBgPmg");
+    postMessage("https://www.youtube.com/user/clyne335");
     this.res.end();
   }
   else if(request.text && botRegexKC.test(request.text)) {
@@ -289,16 +291,13 @@ function respond() {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/480x204.gif.461387d8207a487094c05503f5228dd7");
     this.res.end();  
-  }
-  
-  
-}
+  }  
   else {
-  console.log("don't care");
-  this.res.writeHead(200);
-  this.res.end();
+    console.log("don't care");
+    this.res.writeHead(200);
+    this.res.end();
   }
-
+}
 
 function postMessage(response) {
   var botResponse,options, body, botReq;
