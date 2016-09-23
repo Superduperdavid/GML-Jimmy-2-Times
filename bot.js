@@ -6,7 +6,7 @@ function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
 }
 function respond(){
-  var post = JSON.parse(this.req.chunks[0]),
+  var post = JSON.parse(this.req.chunks[0]()),
   var text = post.text;
   var user_id = post.user_id;
   
