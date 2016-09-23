@@ -90,7 +90,7 @@ function respond() {
   }
   else if(request.text && botRegexJAC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/clyne335");
+    postMessage("https://www.youtube.com/channel/UCb5S4tdaOlcn9ZnjflBgPmg");
     this.res.end();
   }
   else if(request.text && botRegexKC.test(request.text)) {
