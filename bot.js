@@ -21,279 +21,279 @@ function respond() {
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegexARI.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCcxabxoJHG9cnBV4Gsug8Sg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexATL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/XlPoLaR04");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexBAL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/Fussballer890");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexBUF.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/GratwickBills");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexCAR.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/thatsjt");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexCHI.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCMUIBjtzWyZMFxhj45mdvBw");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexCIN.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCq5ezcTjAcKIInqbL1xwd_g");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexCLE.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://m.youtube.com/channel/UC9RnpVjx52zLSrA7_arAwAQ");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexDAL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCZUOLrKldRUxKdhpy0O6-mw");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexDEN.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/LunarFuzionGaming");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexDET.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UClvsLwLu_dckd1CB9fbtT4A");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexGB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/rafbretas");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexHOU.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/dannewton4");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexIND.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/badcapone1");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexJAC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/clyne335");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexKC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCUQ_G9lIXxMQnP4h55hqjKw");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexLA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCVBVl8UHyVjhteFPyXAAbwA");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexMIA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCo22yos1aOqsbBb0YHzCd7A");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexMIN.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCH4DdBg3Zgt-b4Se8HynkMg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexNE.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCSq9JjD1xP3joKVZcHM4UoA");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexNO.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCHbPkEVjmjL_EeXXoPrDTjA");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexNYG.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCZiAURa0_KddHWKsnr51bUw");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexNYJ.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCYEco75Hxqh73pHWbFW9-kA");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexOAK.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/DJJaySkillz");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexPHI.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCesEoyrXzsuP8sq0AeW0OjQ");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexPIT.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCfxUZY9yOW7HD6BkBuj361g");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexSD.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/pimpdaddysanta");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexSEA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UClvsLwLu_dckd1CB9fbtT4A");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexSF.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/ctopher2291");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexTB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UCGeXJYbpRIZMs33CLCoZ87A");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexTEN.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/sds606");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexWAS.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/user/Rwinne1");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexGML.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/channel/UClvsLwLu_dckd1CB9fbtT4A");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }    
   else if(request.text && botTRYME.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1ryMWVFRb7O7ozjpDokBm7R9wsAb6D01UVmM4qph29Rc/pub");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexPDL.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/GML/players?name="+rep+"&position=all&team=all");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexNXT.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/GML/team/"+request.text.substring(10,13)+"/schedule");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexSCH.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/GML/schedules");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexRO.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/gml/team/"+request.text.substring(8,11)+"/roster");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexDstand.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/standings");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexCstand.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/standings/conference");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexPow.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/standing/ranking");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexHurt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/gml/players?name=&position=all&team="+request.text.substring(6,9)+"&injured=1");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/16cJD6ers2J59C9t3_fTZdvtz--membWK1-DrwN6KIWM/pub");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/gml/rules");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexDIS.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1_g6eZbrpy3EX59ULvhayeISV9xfk00Rgb5mJm3lF_sU/pub");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i1.kym-cdn.com/photos/images/facebook/000/918/952/d5a.png");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexdying.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgflip.com/xgtsl.jpg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexYoda.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://memedad.com/memes/977947.jpg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexMore.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://memedad.com/memes/977979.jpg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexDod.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://memedad.com/memes/977981.jpg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexNoplay.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgflip.com/tcsz3.jpg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexSimhurt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://memedad.com/memes/977993.jpg");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexPanda.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/480x204.gif.461387d8207a487094c05503f5228dd7");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();
   }
   else if(request.text && botRegexSYS.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("My NEW name");
+    postMessage("https://www.youtube.com/watch?v=3XGAmPRxV48");
     this.res.end();  
    }
    
